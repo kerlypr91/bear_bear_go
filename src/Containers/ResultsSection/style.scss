@@ -1,0 +1,38 @@
+.results {
+  padding: 10px 100px 80px 100px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+    &__count {
+      color: rgba(154, 172, 179, 0.733);
+    }
+
+    &__result {
+      margin-bottom: 25px;
+
+      &__title,
+      &__description,
+      &__url {
+        margin: 0;
+        padding: 0;
+      }
+
+      &__title {
+        color: #cbe76f;
+        font-size: 21px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      &__url {
+        cursor: pointer;
+        color: #aff7e5;
+        font-size: 14px;
+        margin-top: 15px;
+      }
+    }
+  }
+}

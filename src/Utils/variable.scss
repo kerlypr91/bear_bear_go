@@ -1,0 +1,44 @@
+$maxSmallRange: 37.438em;
+$minFooterRange: 1040px;
+$minMediumRange: 37.5em;
+$maxMediumRange: 76.188em;
+$minLargeRange: 76.25em;
+$minMediumLandscapeRange: 48.063em;
+
+@mixin animate_all_properties {
+  @include createTransition(all 300ms ease);
+}
+
+@mixin createTransition($values...) {
+  -webkit-transition: $values;
+  -ms-transition: $values;
+  -moz-transition: $values;
+  -o-transition: $values;
+  transition: $values;
+}
+
+@mixin createAnimation($values...) {
+  -webkit-animation: $values;
+  -ms-animation: $values;
+  -moz-animation: $values;
+  -o-animation: $values;
+  animation: $values;
+}
+
+@mixin createKeyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @-o-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
