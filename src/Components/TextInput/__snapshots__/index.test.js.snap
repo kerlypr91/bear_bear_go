@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown match snapshot 1`] = `
+<div
+  className="ui inverted icon input"
+>
+  <input
+    onChange={[Function]}
+    placeholder="test"
+    type="text"
+    value="a"
+  />
+  <i
+    aria-hidden="true"
+    className="search icon"
+    onClick={[Function]}
+  />
+</div>
+`;

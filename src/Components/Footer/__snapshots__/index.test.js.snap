@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer match snapshot 1`] = `
+<footer
+  className="footer"
+>
+  <span
+    className="footer__copy"
+  >
+    © BCC - Bear Code Company
+  </span>
+</footer>
+`;

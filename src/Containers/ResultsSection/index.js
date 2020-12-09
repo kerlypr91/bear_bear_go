@@ -1,7 +1,6 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux';
-
-import actions from '../../Redux/actions'
+import { useSelector } from 'react-redux'
+import { Icon } from 'semantic-ui-react'
 
 import Loader from '../../Components/Loader'
 
@@ -32,9 +31,12 @@ export default function ResultsSection () {
 
             return (
               <div key={index} className="results__list__result">
+                <h4 className="results__list__result__url">
+                  {url}
+                  <Icon name="angle down" />
+                </h4>
                 <h2 className="results__list__result__title">{title}</h2>
                 <h5 className="results__list__result__description">{description}</h5>
-                <h4 className="results__list__result__url">{url}</h4>
               </div>
             )
           })
