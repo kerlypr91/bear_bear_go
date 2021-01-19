@@ -1,4 +1,7 @@
+##Bear Bear Go - search engine kind of app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To see the deployed version, go her: https://kerlypr91.github.io/search_engine/
 
 ## Available Scripts
 
